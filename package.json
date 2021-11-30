@@ -1,0 +1,51 @@
+{
+  "name": "wave-portal-eth",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "eth:deploy-local": "npx hardhat run scripts/deploy.js --network localhost",
+    "eth:deploy-testnet": "npx hardhat run scripts/deploy.js --network rinkeby",
+    "eth:run-local": "npx hardhat run scripts/run.js",
+    "eth:local-node": "npx hardhat node",
+    "eth:export-node-ssl": "export NODE_OPTIONS=--openssl-legacy-provider"
+  },
+  "dependencies": {
+    "@chakra-ui/react": "1.7.2",
+    "@emotion/react": "11.7.0",
+    "@emotion/styled": "11.6.0",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "ethers": "^5.4.4",
+    "framer-motion": "4.1.17",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-scripts": "3.2.0"
+  },
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.0.2",
+    "@nomiclabs/hardhat-waffle": "^2.0.1",
+    "chai": "^4.3.4",
+    "dotenv": "^10.0.0",
+    "ethereum-waffle": "^3.4.0",
+    "ethers": "^5.5.1",
+    "hardhat": "^2.6.8"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [">0.2%", "not dead", "not op_mini all"],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "keywords": [],
+  "description": ""
+}
